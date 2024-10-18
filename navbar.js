@@ -18,10 +18,15 @@ window.addEventListener('scroll', function() {
 const hamburger = document.getElementById("hamburger-menu");
 const navMenu = document.querySelector(".navigation-list-container");
 
-// Toggle menu when hamburger is clicked
-hamburger.addEventListener("touchstart", () => {
-    navMenu.classList.toggle("active"); 
-});
+function toggleMenu() {
+    navMenu.classList.toggle("active");
+}
+
+// Toggle menu on click, touchstart, or mousedown
+hamburger.addEventListener("click", toggleMenu);
+hamburger.addEventListener("touchstart", toggleMenu);
+hamburger.addEventListener("mousedown", toggleMenu);
+
 
 // Hide menu on scroll for mobile
 window.addEventListener("scroll", () => {
