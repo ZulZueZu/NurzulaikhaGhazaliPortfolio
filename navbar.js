@@ -19,7 +19,7 @@ const hamburger = document.getElementById("hamburger-menu");
 const navMenu = document.querySelector(".navigation-list-container");
 
 // Toggle menu when hamburger is clicked
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("touchstart", () => {
     navMenu.classList.toggle("active"); 
 });
 

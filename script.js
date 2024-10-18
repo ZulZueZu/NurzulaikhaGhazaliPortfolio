@@ -26,8 +26,8 @@ ctx.fillText('AND PAINT!', canvas.width / 2, canvas.height / 2 + 80);
 
 const colorText = {
     '#CF0000': 'UI/UX Design: Create interactive prototypes using Figma, facilitating team previews and gathering feedback to refine design concepts.',
-    '#ff63c6': 'Web Development: Develop responsive websites using HTML, CSS, JavaScript, or CMS WordPress, ensuring consistent performance, functionality, and accessibility across desktops, tablets, and mobile devices.',
-    '#ff792b': 'SEO Implementation: Strategically apply search engine optimization (SEO) best practices, including optimizing on-page content, meta tags, and image alt texts, to improve organic search rankings and increase website visibility, traffic, and engagement.',
+    '#ff63c6': 'Web Development: Develop responsive websites using HTML, CSS, JavaScript, or CMS WordPress, ensuring consistent performance, and accessibility across desktops, tablets, and mobile devices.',
+    '#ff792b': 'SEO Implementation: Strategically apply search engine optimization (SEO) best practices, including optimizing on-page content, meta tags, and image alt texts.',
     '#ffc53d': 'Cross-functional Communication: Collaborate with internal teams, external partners, and clients to ensure efficient project delivery and alignment with requirements.',
     '#4dc425': 'Quality Assurance & Testing: Conduct rigorous testing of websites pre-launch, identifying and resolving functional, design, and compatibility issues across various browsers and devices.',
     '#1334d6': 'Time Management: Manage multiple website development projects simultaneously, adhering to strict deadlines and client expectations.'
