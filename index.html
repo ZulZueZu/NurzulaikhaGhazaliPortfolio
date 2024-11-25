@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,104 +7,143 @@
     <meta name="description" content="Portfolio of Nurzulaikha Ghazali, a skilled UI/UX Designer and Frontend Developer.">
     <meta name="keywords" content="UI/UX Designer, Frontend Developer, Portfolio, Web Design, Graphic Design, SEO">
     <meta name="author" content="Nurzulaikha Ghazali">
+    <meta name="description" content="A comprehensive and intuitive Project Management Admin Dashboard designed to streamline workflow, monitor progress, and enhance productivity.">
+    <meta name="keywords" content="Project Management, Admin Dashboard, Task Tracking, Workflow, Productivity, Analytics, Team Collaboration">
     <title>Nurzulaikha Ghazali Portfolio</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Finger Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="navbar.js" defer></script>
+    <script src="paint.js" defer></script>
     <script src="carousel.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./assets/zue_icon.ico">
 </head>
 <body>
-    <!-- Top navigation bar -->
-    <div id="navbar-container">
-        <div class="section-container">
-            <div class="opacity-background"></div>
-            <div class="navbar-contents">
-                <div class="logo-container">
-                    <a>
-                        <h1>ZUE.</h1>
-                        <h3>UI/UX DESIGNER/DEVELOPER</h3>
-                    </a>
-                </div>
-                <div class="hamburger" id="hamburger-menu" onclick="void(0);" style="cursor: pointer;">&#9776;</div> 
-                <div class="navigation-list-container">
-                    <a class="nav-item" href="#about">about</a>
-                    <a class="nav-item" href="#skills">skills</a>
-                    <a class="nav-item" href="#project">project</a>
-                    <a class="nav-item" href="#contact">contact</a>
-                </div>
+    <!-- HEADER -->
+    <header>
+        <div class="header-title">
+            <div class="title">
+                <h1 class="title-logo">ZUE.</h1>
+                <p>UI/UX DESIGNER/DEVELOPER</p>
             </div>
         </div>
-    </div>
-
-    <!--Page container-->
-    <div class="page-container">
-        <div id="about">
-            <div class="image-container">
-                <img class="headshot_img" src="./assets/Zue_headshot.png" alt="Headshot image of Nurzulaikha Ghazali" width="200px" height="200px">
-            </div>
-            <div class="details">
-                <h4 style="margin-top: 0px;">Nurzulaikha Binti Mohammad Ghazali</h4>
-                <p style="margin-top: 0px;">UI/UX Designer & Frontend Developer</p>
-            </div>
-            <div class="introduction">
-                <p style="text-align: justify; margin-top: 0px;">A highly motivated fresh graduate in Bachelor of Computer Science (Multimedia) from Universiti Putra Malaysia, 
-                    eager to leverage my skills in UI/UX Design and Frontend Development. 
-                    Eager to apply technical knowledge, gain practical experience, 
-                    assist in the implementation of innovative solutions while expanding skill set 
-                    in field of IT and commited to continous improvement and driving company success.
-                </p>
-                <p style="text-align: end;">Let's work together!</p>
+    </header>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="top">
+            <h1 class="title-logo">PORTFOLIO</h1>
+            <div class="theme-btn">
+                <div id="theme-toggle" class="fas fa-sun"></div>
             </div>
         </div>
-        <div id="about2">
-            <div class="professional-imgmobile">
-                <img class="professional_img" src="./assets/Zue_professional.png" alt="Professional photo of Nurzulaikha Ghazali">
+        <nav class="navbar">
+            <a href="#home" class="active">
+                <i class="fa-solid fa-house"></i>
+                <h4>home</h4>
+            </a>
+            <a href="#about">
+                <i class="fa-solid fa-user"></i>
+                <h4>about</h4>
+            </a>
+            <a href="#skills">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h4>skills</h4>
+            </a>
+            <a href="#projects">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h4>projects</h4>
+            </a>
+            <a href="#contact">
+                <i class="fa-solid fa-address-book"></i>
+                <h4>contact</h4>
+            </a>
+        </nav>
+        <div class="follow">
+            <a class="github" href="https://github.com/ZulZueZu?tab=repositories" target="_blank">
+                <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/in/nurzulaikha-ghazali-62120b26b/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="commission" href="https://codepen.io/Zue-Ghazali" target="_blank">
+                <i class="fa-brands fa-codepen fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="commission" href="https://zulzuezu.carrd.co/" target="_blank">
+                <i class="fa-solid fa-paintbrush fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </aside>
+    
+    <main>
+        <!-- HOME -->
+        <section id="home" class="home">
+            <div class="image">
+                <img src="./assets/Zue_profile.webp" alt="Nurzulaikha Ghazali profile image" class="masked-image">
             </div>
-            <div class="description">
-                <h2>EXPERIENCE & EDUCATION</h2>
-                <div class="about2">
-                    <div class="experience">
-                        <h2 style="opacity: 30%;">2024 - Present</h2>
-                        <img src="./assets/LU7.png" alt="Light Up 7 Sdn. Bhd. logo" style="height: 135px; padding-top: 10px;">
-                        <h3>Light Up 7 Sdn. Bhd.</h3>
-                        <p>Web Design/Developer Intern</p>
-                        <p style="text-align: justify;">- Design, develop, and maintain websites for both company and client projects primarily using the WordPress content management system (CMS) and the Divi Theme. 
-                            Ensure effective collaboration and communication with internal and external teams, 
-                            while implementing SEO best practices to improve search rankings and drive higher engagement.
-                        </p>
-                    </div>
-                    <div class="education">
-                        <h2 style="opacity: 30%;">2020 - Present</h2>
-                        <img src="./assets/UPM.png" alt="Universiti Putra Malaysia logo" style="height: 135px; padding-top: 10px;">
-                        <h3>Universiti Putra Malaysia</h3>
-                        <p>Bachelor of Computer Science Multimedia with Honours</p>
-                        <p style="text-align: justify;">- Learn the fundamentals of system and application development across various programming languages 
-                            such as Java, C, Python, HTML, and Dart, 
+            <div class="content">
+                <h1>Hi, I am <span>Nurzulaikha Ghazali</span></h1>
+                <h3 class="typing-text">Portfolio of <span></span></h3>
+                <p>A motivated and detail-oriented graduate in Bachelor of Computer Science (Multimedia) from Universiti Putra Malaysia, with a strong foundation in UI/UX design and software/web development. Proficient in creating intuitive user interfaces and developing functional and visually appealing applications. Dedicated to continuous improvement, expanding technical expertise, and contributing to organisational success through creative problem-solving and technical proficiency.</p>
+                <a href="#contact" class="btn">Let's work together!</a>
+            </div>
+        </section>
+        
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="section-title exp">
+                <h6>EXPERIENCE</h6>
+                <h2>EXPERIENCE</h2>
+            </div>
+            <div class="timeline">
+                <div class="container right appear">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Universiti Putra Malaysia</h2>
+                            <h4>Bachelor of Computer Science Multimedia with Honours</h4>
+                        </div>
+                        <div class="details">
+                            <p>- Learn the fundamentals of system and application development across various programming languages 
+                            such as Java, JavaScript, Python, C, HTML, CSS, and PHP, 
                             along with user interface design using Figma and database management in SQL. 
                             Collaborate on group projects while adapting to different methodologies 
-                            and utilizing quick thinking to analyze and resolve technical issues.
-                        </p>
+                            and utilizing quick thinking to analyze and resolve technical issues.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left appear">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Light Up 7 Sdn. Bhd.</h2>
+                            <h4>Web Design/Developer Intern</h4>
+                        </div>
+                        <div class="details">
+                            <p>- Design, develop, and maintain websites for both company and client projects primarily using the WordPress content management system (CMS) and the Divi Theme. 
+                            Ensure effective collaboration and communication with internal and external teams, 
+                            while implementing SEO best practices to improve search rankings and drive higher engagement.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="professional-img">
-                <img src="./assets/Zue_professional.png" alt="Professional photo of Nurzulaikha Ghazali" style="width: 100%; border-radius: 15px">
-            </div>
-        </div>
-        <div id="skills">
-            <div class="skills">
-                <h5>SKILLS</h5>
+        </section>
+
+        <!-- SKILLS-->
+        <section id="skills" class="skills">
+            <div class="section-title skill">
+                <h6>SKILLS</h6>
                 <h2>SKILLS</h2>
             </div>
             <div class="skills-paint">
                 <div class="paint-tab">
                     <div class="tab-text">
-                        <img src="./assets/paint logo.svg" alt="Paint logo">
-                        <p style="margin: 0px; font-size: 14px;">| PAINT_TO_REVEAL_MY_SKILLS</p>
+                        <img class="paint-logo" src="./assets/paint logo.svg" alt="Paint logo">
+                        <p>PAINT_TO_REVEAL_MY_SKILLS</p>
                     </div>
                     <div class="tab-icon">
                         <i class="fa fa-minus fa-2x" aria-hidden="true"></i>
@@ -120,20 +159,21 @@
                     <button class="clr green" data-clr="#4dc425">&nbsp;</button>
                     <button class="clr blue" data-clr="#1334d6">&nbsp;</button>
                 </div>
-                <section class="container">
+                <div class="paint-board">
                     <div class="drawing-board">
                         <canvas id="drawing-board"></canvas>
                     </div>
-                </section>                                                          
+                </div>                                                          
             </div>
-        </div>
-        <div id="project">
-            <div class="project">
-                <h5>PROJECT</h5>
-                <h2>PROJECT</h2>
+        </section>
+
+        <!--PROJECTS-->
+        <section id="projects" class="projects">
+            <div class="section-title project">
+                <h6>PROJECTS</h6>
+                <h2>PROJECTS</h2>
             </div>
-        </div>  
-            <section class="body-carousel">
+            <div class="body-carousel no-highlight">
                 <div class="carousel">
                     <img class="carousel-img" src="./assets/grid-image.svg" alt="Background image for the carousel">
                     <div class="carousel-item">
@@ -190,36 +230,60 @@
                         </div>
                     </div>
                 </div>
-            </section>              
-        <div id="contact">
-            <div class="contact-title">
-                <h5>CONTACT</h5>
-                <img class="contact-img" src="./assets/zulzuezu_commission.png" alt="Contact Commission Head Pop-up Image">
+            </div> 
+        </section>
+
+        <!--CONTACT-->
+        <section id="contact" class="contact">
+            <div class="section-title contacts">
+                <h6>CONTACT</h6>
+                <h2>CONTACT</h2>
+            </div>
+            <div class="pop-img">
+                <img class="contact-img appear" src="./assets/zulzuezu_commission.png" alt="Contact Commission Head Pop-up Image">
                 <img class="hover_commission" src="./assets/commission.png" alt="Commission Pop-up Image">
             </div>
-            <div id="footer">
-                <div class="contact">
-                    <h2 style="color: black; text-decoration: underline;">GET IN TOUCH</h2>
-                    <div class="social">
-                        <a class="github" href="https://github.com/ZulZueZu?tab=repositories" target="_blank">
-                            <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
-                        </a>
+            <div class="contact-details">
+                <h2 class="get-in-touch">GET IN TOUCH</h2>
+                <h3>Have a project in mind or just want to connect?</h3>
+                <h3>Reach out at</h3>
+                <a href="mailto:bmg.nurzulaikha@gmail.com?subject=Portfolio Inquiry&body=I hope this message finds you well. I came across your portfolio and would love the opportunity to talk.">
+                    <h2>bmg.nurzulaikha@gmail.com</h2>
+                </a>
+                <h3>Or explore my work and connect with me on:</h3>
+                <ul>
+                    <li>
                         <a class="linkedin" href="https://www.linkedin.com/in/nurzulaikha-ghazali-62120b26b/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in fa-3x" aria-hidden="true"></i>
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <h5>Linkedin</h5>
                         </a>
+                    </li>
+                    <li>
+                        <a class="github" href="https://github.com/ZulZueZu?tab=repositories" target="_blank">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <h5>Github</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="commission" href="https://codepen.io/Zue-Ghazali" target="_blank">
+                            <i class="fa-brands fa-codepen" aria-hidden="true"></i>
+                            <h5>Codepen</h5>
+                        </a>
+                    </li>
+                    <li>
                         <a class="commission" href="https://zulzuezu.carrd.co/" target="_blank">
-                            <i class="fa-solid fa-paintbrush fa-3x" aria-hidden="true"></i>
+                            <i class="fa-solid fa-paintbrush" aria-hidden="true"></i>
+                            <h5>Art Commission Carrd</h5>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-            <div id="copyright">
-                <div class="copyright-inner">
-                    <p>Nurzulaikha Ghazali . Portfolio 2024</p>
-                    <p>zue | Malaysia</p>
-                </div>
-            </div>
+        </section>
+
+
+        <div class="credit">
+            &copy; copyright @ <span id="year"></span> by <span>Nurzulaikha Ghazali</span>
         </div>
-    </div>
+    </main>
 </body>
 </html>
